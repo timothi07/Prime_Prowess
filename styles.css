@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&amp;display=swap');
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Nunito, sans-serif;
+}
+
+.responsive-container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.inner-container {
+  max-width: 1320px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+
+.section-head-text {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-subhead-text {
+  color: rgb(72, 72, 72);
+  font-size: 20px;
+  line-height: 27px;
+  max-width: 670px;
+  margin: 0 0 80px 0;
+}
+
+.swiper.team-swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 20px; /* Add padding to create space for scrollbar */
+}
+
+.swiper-slide {
+  width: 33.33%; /* Set the width of each team member card */
+  flex-shrink: 0; /* Prevent cards from shrinking */
+  scroll-snap-align: start; /* Snap each card to the start of the container */
+}
+
+.card {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 25px 40px;
+  box-shadow: rgba(134, 134, 134, 0.16) 0px 6px 24px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  margin-right: 20px; /* Add spacing between team members */
+}
+
+.img-wrapper {
+  width: 175px;
+  height: 175px;
+  clip-path: circle(50% at 50% 50%);
+  margin-bottom: 50px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.position {
+  line-height: 26px;
+  color: rgb(0, 166, 127);
+  font-weight: 700;
+  margin: 0 0 20px 0;
+}
+
+.testimonial {
+  color: rgb(122, 122, 122);
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+}
+
+.outer-container {
+  background-color: rgb(235, 235, 227);
+  padding: 0 50px;
+}
+
+.container-block {
+  min-height: 75px;
+  height: fit-content;
+  width: 100%;
+  padding: 10px;
+  display: block;
+}
+
+.swiper-pagination.container-block {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .swiper-slide {
+    width: 50%; /* Adjust the width for smaller screens */
+  }
+}
+
+@media (max-width: 500px) {
+  .swiper-slide {
+    width: 100%; /* Set the width to 100% for smaller screens */
+  }
+}
